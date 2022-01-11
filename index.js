@@ -11,6 +11,4 @@ app.get("/health", function (req, res) {
   });
 });
 
-app.listen(port, function (req, res) {
-  console.log("API rest running at port" + port);
-});
+app.listen(port, console.log("API rest running at port" + port));
