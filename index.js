@@ -25,7 +25,7 @@ const sequelize = new Sequelize(process.env.DATABASE, process.env.USER, process.
 const port = process.env.PORT;
 const packjson = require("./package.json");
 
-// GET /health --> returns {"name": "Neocomplexx", "version": "1.0.0"}
+// GET /health --> returns {"name": "Neocomplexx modificado", "version": "1.0.0"}
 app.get("/health", function (req, res) {
   res.json({
     name: packjson.name,
