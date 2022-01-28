@@ -6,7 +6,7 @@ const packjson = require("./package.json");
 
 app.get("/health", function (req, res) {
   res.json({
-    name: packjson.name,
+    name: packjson.name + " modificado",
     version: packjson.version,
   });
 });
